@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-black: #111111;
+    --brand-offwhite: #F8F7F4;
+    --brand-white: #FFFFFF;
+    --brand-warmgray: #EAE8E3;
+    --brand-gray: #777777;
+    --brand-accent: #636652;
+  }
+
+  body {
+    background-color: #F8F7F4;
+    color: #111111;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, .font-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom scrollbar for sleek minimalist feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f0ec;
+}
+::-webkit-scrollbar-thumb {
+  background: #c8c5bc;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999589;
+}
+
+/* Subtle selection highlight */
+::selection {
+  background-color: #111111;
+  color: #ffffff;
+}
